@@ -21,10 +21,7 @@
 extern "C" {
 #endif
 
-/*! TODO: Fix this DLL Export */
-#define GL_EXPORT(x) x
-#define GL_INTERNAL(x) x
-
+// Lib deps ALLEGRO or SDL
 #if defined ALLEGRO_H
   #define glTexture BITMAP
 #elif defined _SDL_H
